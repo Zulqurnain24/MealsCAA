@@ -12,7 +12,7 @@ class DefaultSearchMealsUseCase: SearchMealsUseCase {
   
   init(dataSource: MealDataSource) {
     self.dataSource = dataSource
-    super.init(networkService: NetworkService())
+    super.init()
   }
   
   override func execute(query: String) -> AnyPublisher<[Meal], Error> {

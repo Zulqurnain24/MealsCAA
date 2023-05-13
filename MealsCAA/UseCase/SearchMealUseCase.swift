@@ -14,7 +14,7 @@ protocol SearchMealsUseCaseProtocol {
 class SearchMealsUseCase: SearchMealsUseCaseProtocol {
     let networkService: NetworkServiceProtocol
 
-    init(networkService: NetworkServiceProtocol) {
+    init(networkService: NetworkServiceProtocol = NetworkService()) {
         self.networkService = networkService
     }
 

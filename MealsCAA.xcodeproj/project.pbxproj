@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2794A3DB2A0FFADB00B81741 /* MealDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2794A3DA2A0FFADB00B81741 /* MealDataSource.swift */; };
 		64A01A8C2A0F88EE00A802E6 /* MealsCAAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A01A8B2A0F88EE00A802E6 /* MealsCAAApp.swift */; };
 		64A01A8E2A0F88EE00A802E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A01A8D2A0F88EE00A802E6 /* ContentView.swift */; };
 		64A01A902A0F88EF00A802E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64A01A8F2A0F88EF00A802E6 /* Assets.xcassets */; };
@@ -27,7 +28,6 @@
 		64A01ADC2A0FB96600A802E6 /* MealDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A01ADB2A0FB96600A802E6 /* MealDetailView.swift */; };
 		64A01ADE2A0FB98200A802E6 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A01ADD2A0FB98200A802E6 /* SearchBar.swift */; };
 		64A01AE02A0FB9AC00A802E6 /* SearchMealsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A01ADF2A0FB9AC00A802E6 /* SearchMealsView.swift */; };
-		64A01AE62A0FBC0700A802E6 /* MealApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A01AE52A0FBC0700A802E6 /* MealApi.swift */; };
 		64A01AE82A0FBC8100A802E6 /* SearchMealsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A01AE72A0FBC8100A802E6 /* SearchMealsUseCaseTests.swift */; };
 		64A01AEC2A0FC32A00A802E6 /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A01AEB2A0FC32A00A802E6 /* MockNetworkService.swift */; };
 /* End PBXBuildFile section */
@@ -50,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2794A3DA2A0FFADB00B81741 /* MealDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealDataSource.swift; sourceTree = "<group>"; };
 		64A01A882A0F88EE00A802E6 /* MealsCAA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MealsCAA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A01A8B2A0F88EE00A802E6 /* MealsCAAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsCAAApp.swift; sourceTree = "<group>"; };
 		64A01A8D2A0F88EE00A802E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,7 +74,6 @@
 		64A01ADB2A0FB96600A802E6 /* MealDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailView.swift; sourceTree = "<group>"; };
 		64A01ADD2A0FB98200A802E6 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		64A01ADF2A0FB9AC00A802E6 /* SearchMealsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMealsView.swift; sourceTree = "<group>"; };
-		64A01AE52A0FBC0700A802E6 /* MealApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealApi.swift; sourceTree = "<group>"; };
 		64A01AE72A0FBC8100A802E6 /* SearchMealsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMealsUseCaseTests.swift; sourceTree = "<group>"; };
 		64A01AEB2A0FC32A00A802E6 /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -202,7 +202,7 @@
 		64A01ACD2A0FB86800A802E6 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				64A01AE52A0FBC0700A802E6 /* MealApi.swift */,
+				2794A3DA2A0FFADB00B81741 /* MealDataSource.swift */,
 				64A01AC12A0FB74A00A802E6 /* NetworkService.swift */,
 			);
 			path = Networking;
@@ -410,7 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64A01AD32A0FB8CE00A802E6 /* DefaultSearchMealsUseCase.swift in Sources */,
-				64A01AE62A0FBC0700A802E6 /* MealApi.swift in Sources */,
+				2794A3DB2A0FFADB00B81741 /* MealDataSource.swift in Sources */,
 				64A01AC52A0FB7A900A802E6 /* SearchMealUseCase.swift in Sources */,
 				64A01AC22A0FB74A00A802E6 /* NetworkService.swift in Sources */,
 				64A01ADC2A0FB96600A802E6 /* MealDetailView.swift in Sources */,
@@ -513,7 +513,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -567,7 +567,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -585,7 +585,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MealsCAA/Preview Content\"";
-				DEVELOPMENT_TEAM = FHN8RU94TU;
+				DEVELOPMENT_TEAM = R592ZXYRNX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -593,6 +593,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -614,7 +615,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MealsCAA/Preview Content\"";
-				DEVELOPMENT_TEAM = FHN8RU94TU;
+				DEVELOPMENT_TEAM = R592ZXYRNX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -622,6 +623,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
