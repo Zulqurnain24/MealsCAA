@@ -14,19 +14,19 @@ struct MealDetailView: View {
         GeometryReader { geometry in
             ScrollView {
                 VStack(alignment: .leading, spacing: 16) {
-                    AsyncImage(url: URL(string: meal.strMealThumb)) { image in
+                    AsyncImage(url: URL(string: meal.imageUrl)) { image in
                         image
                             .resizable()
                             .scaledToFit()
                     } placeholder: {
                         ProgressView()
                     }
-                    Text(meal.strMeal)
+                    Text(meal.title)
                         .font(.title)
-                    Text(meal.strCategory)
+                    Text(meal.category)
                         .font(.subheadline)
                         .foregroundColor(.secondary)
-                    Text(meal.strInstructions)
+                    Text(meal.instructions)
                       .font(.body)
                       .fixedSize(horizontal: false, vertical: true)
                 }

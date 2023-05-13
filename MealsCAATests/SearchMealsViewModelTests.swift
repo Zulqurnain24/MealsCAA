@@ -33,7 +33,7 @@ class SearchMealsViewModelTests: XCTestCase {
     
     func testSearch() {
         let query = "chicken"
-        let meals = [Meal(idMeal: "1", strMeal: "Chicken dish", strCategory: "Main", strMealThumb: "https://example.com/chicken.jpg", strInstructions: "Cook chicken")]
+        let meals = [Meal(idMeal: "1", title: "Chicken dish", category: "Main", imageUrl: "https://example.com/chicken.jpg", instructions: "Cook chicken", youtube: "youtube.com")]
         dataSource.searchMealsResult = .success(meals)
         viewModel.search(query: query)
         viewModel.meals = meals
@@ -44,7 +44,7 @@ class SearchMealsViewModelTests: XCTestCase {
         
         let expectation = XCTestExpectation(description: "search finished")
         viewModel.$meals.sink { mealsResponse in
-            XCTAssertEqual(mealsResponse, meals, "meals should be set correctly")
+            XCTAssertEqual(mealsResponse, meals)
             XCTAssertEqual(self.viewModel.isLoading, true, "isLoading should be false after search")
             expectation.fulfill()
         }.store(in: &cancellables)

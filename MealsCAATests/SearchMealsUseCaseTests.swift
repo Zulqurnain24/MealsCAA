@@ -30,7 +30,7 @@ class NetworkServiceTests: XCTestCase {
     
     func testSearchMealsWithValidQuery() {
         let query = "chicken"
-        sut.meals = [Meal(idMeal: "1", strMeal: "Chicken Beyti", strCategory: "Chicken", strMealThumb: "chicken.jpg", strInstructions: "(1)Roast chicken in oven (2)Serve with garnishing")]
+        sut.meals = [Meal(idMeal: "1", title: "Chicken Beyti", category: "Chicken", imageUrl: "chicken.jpg", instructions: "(1)Boil chicken (2)Put spice (3)Garnish", youtube: "youtube.com/chicken")]
         sut.error = nil
         let expectation = XCTestExpectation(description: "Search meals")
         

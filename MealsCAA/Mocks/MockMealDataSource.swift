@@ -6,7 +6,6 @@
 //
 
 import Combine
-@testable import MealsCAA
 import Foundation
 
 class MockMealDataSource: MealDataSource {

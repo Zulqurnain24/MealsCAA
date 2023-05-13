@@ -14,14 +14,14 @@ struct MealRow: View {
     GeometryReader { geometry in
       VStack{
         HStack{
-          AsyncImage(url: URL(string: meal.strMealThumb)) { image in
+            AsyncImage(url: URL(string: meal.imageUrl)) { image in
             image
               .resizable()
               .frame(width: geometry.size.width * 0.2, height: geometry.size.width * 0.2)
           } placeholder: {
             ProgressView()
           }
-          Text("\(meal.strMeal)")
+            Text("\(meal.title)")
         }
       }
     }
