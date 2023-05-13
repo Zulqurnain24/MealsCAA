@@ -19,7 +19,7 @@ class SearchMealsViewModelTests: XCTestCase {
     override func setUp() {
         super.setUp()
         dataSource = MockMealDataSource()
-        useCase = DefaultSearchMealsUseCase(dataSource: dataSource!)
+        useCase = SearchMealsUseCase(networkService: MockNetworkService())
         viewModel = SearchMealsViewModel(searchMealsUseCase: useCase)
     }
     

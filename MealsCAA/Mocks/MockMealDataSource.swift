@@ -19,5 +19,4 @@ class MockMealDataSource: MealDataSource {
             return Fail(error: NetworkError.unknownError).eraseToAnyPublisher()
         }
     }
-    
 }
