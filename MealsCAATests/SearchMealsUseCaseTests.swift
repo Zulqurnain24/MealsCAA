@@ -2,39 +2,32 @@
 //  SearchMealsUseCaseTests.swift
 //  MealsCAATests
 //
-//  Created by Muhammad Zulqurnain on 13/05/2023.
+//  Created by Mohammad Zulqurnain on 14/05/2023.
 //
 
-import XCTest
 import Combine
+import XCTest
 
 @testable import MealsCAA
 
-class NetworkServiceTests: XCTestCase {
-    
-    var sut: MockNetworkService!
+final class SearchMealsUseCaseTests: XCTestCase {
+
+    var sut: SearchMealsUseCase? = nil
     var cancellables: Set<AnyCancellable>!
     
-    override func setUp() {
-        super.setUp()
-        sut = MockNetworkService()
-        
+    override func setUpWithError() throws {
+        sut = SearchMealsUseCase(networkService: MockNetworkService())
         cancellables = []
     }
-    
-    override func tearDown() {
-        cancellables = nil
+
+    override func tearDownWithError() throws {
         sut = nil
-        super.tearDown()
+        cancellables = nil
     }
     
-    func testSearchMealsWithValidQuery() {
-        let query = "chicken"
-        sut.meals = [Meal(idMeal: "1", title: "Chicken Beyti", category: "Chicken", imageUrl: "chicken.jpg", instructions: "(1)Boil chicken (2)Put spice (3)Garnish", youtube: "youtube.com/chicken")]
-        sut.error = nil
-        let expectation = XCTestExpectation(description: "Search meals")
-        
-        sut.searchMeals(query: query)
+    func testSearchSuccessCase() throws {
+        let expectation = XCTestExpectation(description: "execute")
+        sut?.execute(query: "chicken")
             .sink { completion in
                 switch completion {
                 case .failure(let error):
@@ -42,34 +35,26 @@ class NetworkServiceTests: XCTestCase {
                 case .finished:
                     expectation.fulfill()
                 }
-            } receiveValue: { result in
-                XCTAssertNotNil(result.meals)
+            } receiveValue: { meals in
+                XCTAssertNotNil(meals)
             }
             .store(in: &cancellables)
         
         wait(for: [expectation], timeout: 5)
     }
     
-    func testSearchMealsWithInvalidQuery() {
-        let query = ""
-        sut.meals = []
-        sut.error = NetworkError.invalidURL
-        let expectation = XCTestExpectation(description: "Search meals")
-        
-        sut.searchMeals(query: query)
+    func testSearchFailureCase() throws {
+        let expectation = XCTestExpectation(description: "execute")
+        sut?.execute(query: "")
             .sink { completion in
                 switch completion {
                 case .failure(let error):
-                    guard case NetworkError.invalidURL = error else {
-                        XCTFail("Failed with unexpected error: \(error)")
-                        return
-                    }
+                    XCTFail("Failed with error: \(error)")
                 case .finished:
-                    XCTFail("Expected failure, but received finished.")
+                    expectation.fulfill()
                 }
-                expectation.fulfill()
-            } receiveValue: { _ in
-                XCTFail("Expected failure, but received value.")
+            } receiveValue: { meals in
+                XCTAssertNil(meals)
             }
             .store(in: &cancellables)
         

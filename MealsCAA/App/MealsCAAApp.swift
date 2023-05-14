@@ -9,10 +9,10 @@ import SwiftUI
 
 @main
 struct MealsCAAApp: App {
-
+    
     var body: some Scene {
         WindowGroup {
-          ContentView(viewModel: SearchMealsViewModel(searchMealsUseCase: SearchMealsUseCase(networkService: NetworkService())))
+            MealsListView(viewModel: SearchMealsViewModel(searchMealsUseCase: SearchMealsUseCase(networkService: NetworkService())))
         }
     }
 }

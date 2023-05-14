@@ -10,13 +10,14 @@
 		2794A3DB2A0FFADB00B81741 /* MealDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2794A3DA2A0FFADB00B81741 /* MealDataSource.swift */; };
 		2794A3ED2A100C3200B81741 /* MockMealDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A01AB92A0FA54E00A802E6 /* MockMealDataSource.swift */; };
 		2794A3EF2A100C3600B81741 /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A01AEB2A0FC32A00A802E6 /* MockNetworkService.swift */; };
+		2794A5562A11112C00B81741 /* SearchMealsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2794A5552A11112C00B81741 /* SearchMealsUseCaseTests.swift */; };
+		2794A5582A11123100B81741 /* Meal+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2794A5572A11123100B81741 /* Meal+Mock.swift */; };
 		64A01A8C2A0F88EE00A802E6 /* MealsCAAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A01A8B2A0F88EE00A802E6 /* MealsCAAApp.swift */; };
-		64A01A8E2A0F88EE00A802E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A01A8D2A0F88EE00A802E6 /* ContentView.swift */; };
+		64A01A8E2A0F88EE00A802E6 /* MealsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A01A8D2A0F88EE00A802E6 /* MealsListView.swift */; };
 		64A01A902A0F88EF00A802E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64A01A8F2A0F88EF00A802E6 /* Assets.xcassets */; };
 		64A01A932A0F88EF00A802E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64A01A922A0F88EF00A802E6 /* Preview Assets.xcassets */; };
 		64A01AA92A0F88EF00A802E6 /* SearchScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A01AA82A0F88EF00A802E6 /* SearchScreenTests.swift */; };
 		64A01AB62A0FA37D00A802E6 /* SearchMealsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A01AB52A0FA37D00A802E6 /* SearchMealsViewModelTests.swift */; };
-		64A01ABD2A0FB70100A802E6 /* SearchMealsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A01ABC2A0FB70100A802E6 /* SearchMealsViewModelProtocol.swift */; };
 		64A01ABF2A0FB72100A802E6 /* SearchMealsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A01ABE2A0FB72100A802E6 /* SearchMealsResponse.swift */; };
 		64A01AC22A0FB74A00A802E6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A01AC12A0FB74A00A802E6 /* NetworkService.swift */; };
 		64A01AC52A0FB7A900A802E6 /* SearchMealUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A01AC42A0FB7A900A802E6 /* SearchMealUseCase.swift */; };
@@ -27,7 +28,7 @@
 		64A01ADC2A0FB96600A802E6 /* MealDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A01ADB2A0FB96600A802E6 /* MealDetailView.swift */; };
 		64A01ADE2A0FB98200A802E6 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A01ADD2A0FB98200A802E6 /* SearchBar.swift */; };
 		64A01AE02A0FB9AC00A802E6 /* SearchMealsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A01ADF2A0FB9AC00A802E6 /* SearchMealsView.swift */; };
-		64A01AE82A0FBC8100A802E6 /* SearchMealsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A01AE72A0FBC8100A802E6 /* SearchMealsUseCaseTests.swift */; };
+		64A01AE82A0FBC8100A802E6 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A01AE72A0FBC8100A802E6 /* NetworkServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,9 +50,11 @@
 
 /* Begin PBXFileReference section */
 		2794A3DA2A0FFADB00B81741 /* MealDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealDataSource.swift; sourceTree = "<group>"; };
+		2794A5552A11112C00B81741 /* SearchMealsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMealsUseCaseTests.swift; sourceTree = "<group>"; };
+		2794A5572A11123100B81741 /* Meal+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meal+Mock.swift"; sourceTree = "<group>"; };
 		64A01A882A0F88EE00A802E6 /* MealsCAA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MealsCAA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A01A8B2A0F88EE00A802E6 /* MealsCAAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsCAAApp.swift; sourceTree = "<group>"; };
-		64A01A8D2A0F88EE00A802E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		64A01A8D2A0F88EE00A802E6 /* MealsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsListView.swift; sourceTree = "<group>"; };
 		64A01A8F2A0F88EF00A802E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64A01A922A0F88EF00A802E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		64A01A982A0F88EF00A802E6 /* MealsCAATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealsCAATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,7 +62,6 @@
 		64A01AA82A0F88EF00A802E6 /* SearchScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreenTests.swift; sourceTree = "<group>"; };
 		64A01AB52A0FA37D00A802E6 /* SearchMealsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMealsViewModelTests.swift; sourceTree = "<group>"; };
 		64A01AB92A0FA54E00A802E6 /* MockMealDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMealDataSource.swift; sourceTree = "<group>"; };
-		64A01ABC2A0FB70100A802E6 /* SearchMealsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMealsViewModelProtocol.swift; sourceTree = "<group>"; };
 		64A01ABE2A0FB72100A802E6 /* SearchMealsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMealsResponse.swift; sourceTree = "<group>"; };
 		64A01AC12A0FB74A00A802E6 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		64A01AC42A0FB7A900A802E6 /* SearchMealUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMealUseCase.swift; sourceTree = "<group>"; };
@@ -70,7 +72,7 @@
 		64A01ADB2A0FB96600A802E6 /* MealDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailView.swift; sourceTree = "<group>"; };
 		64A01ADD2A0FB98200A802E6 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		64A01ADF2A0FB9AC00A802E6 /* SearchMealsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMealsView.swift; sourceTree = "<group>"; };
-		64A01AE72A0FBC8100A802E6 /* SearchMealsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMealsUseCaseTests.swift; sourceTree = "<group>"; };
+		64A01AE72A0FBC8100A802E6 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
 		64A01AEB2A0FC32A00A802E6 /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,7 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				64A01AB52A0FA37D00A802E6 /* SearchMealsViewModelTests.swift */,
-				64A01AE72A0FBC8100A802E6 /* SearchMealsUseCaseTests.swift */,
+				64A01AE72A0FBC8100A802E6 /* NetworkServiceTests.swift */,
+				2794A5552A11112C00B81741 /* SearchMealsUseCaseTests.swift */,
 			);
 			path = MealsCAATests;
 			sourceTree = "<group>";
@@ -231,7 +234,7 @@
 		64A01AE12A0FB9DB00A802E6 /* MealsListing */ = {
 			isa = PBXGroup;
 			children = (
-				64A01A8D2A0F88EE00A802E6 /* ContentView.swift */,
+				64A01A8D2A0F88EE00A802E6 /* MealsListView.swift */,
 				64A01AD92A0FB95200A802E6 /* MealRow.swift */,
 				64A01ADD2A0FB98200A802E6 /* SearchBar.swift */,
 				64A01ADF2A0FB9AC00A802E6 /* SearchMealsView.swift */,
@@ -258,7 +261,6 @@
 		64A01AE42A0FBA1900A802E6 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				64A01ABC2A0FB70100A802E6 /* SearchMealsViewModelProtocol.swift */,
 				64A01ABE2A0FB72100A802E6 /* SearchMealsResponse.swift */,
 			);
 			path = Search;
@@ -269,6 +271,7 @@
 			children = (
 				64A01AB92A0FA54E00A802E6 /* MockMealDataSource.swift */,
 				64A01AEB2A0FC32A00A802E6 /* MockNetworkService.swift */,
+				2794A5572A11123100B81741 /* Meal+Mock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -407,17 +410,17 @@
 				64A01AC52A0FB7A900A802E6 /* SearchMealUseCase.swift in Sources */,
 				64A01AC22A0FB74A00A802E6 /* NetworkService.swift in Sources */,
 				64A01ADC2A0FB96600A802E6 /* MealDetailView.swift in Sources */,
-				64A01ABD2A0FB70100A802E6 /* SearchMealsViewModelProtocol.swift in Sources */,
 				2794A3EF2A100C3600B81741 /* MockNetworkService.swift in Sources */,
 				64A01ADE2A0FB98200A802E6 /* SearchBar.swift in Sources */,
 				64A01AC72A0FB7D700A802E6 /* SearchMealsViewModel.swift in Sources */,
 				64A01AC92A0FB81B00A802E6 /* Meal.swift in Sources */,
-				64A01A8E2A0F88EE00A802E6 /* ContentView.swift in Sources */,
+				64A01A8E2A0F88EE00A802E6 /* MealsListView.swift in Sources */,
 				64A01AE02A0FB9AC00A802E6 /* SearchMealsView.swift in Sources */,
 				2794A3ED2A100C3200B81741 /* MockMealDataSource.swift in Sources */,
 				64A01ACC2A0FB84500A802E6 /* NetworkError.swift in Sources */,
 				64A01A8C2A0F88EE00A802E6 /* MealsCAAApp.swift in Sources */,
 				64A01ADA2A0FB95200A802E6 /* MealRow.swift in Sources */,
+				2794A5582A11123100B81741 /* Meal+Mock.swift in Sources */,
 				64A01ABF2A0FB72100A802E6 /* SearchMealsResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,7 +429,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64A01AE82A0FBC8100A802E6 /* SearchMealsUseCaseTests.swift in Sources */,
+				2794A5562A11112C00B81741 /* SearchMealsUseCaseTests.swift in Sources */,
+				64A01AE82A0FBC8100A802E6 /* NetworkServiceTests.swift in Sources */,
 				64A01AB62A0FA37D00A802E6 /* SearchMealsViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,7 +509,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -559,7 +563,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -638,7 +642,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FHN8RU94TU;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = swiftui.elements.com.MealsCAATests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -658,7 +662,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FHN8RU94TU;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = swiftui.elements.com.MealsCAATests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -677,6 +681,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FHN8RU94TU;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = swiftui.elements.com.MealsCAAUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -695,6 +700,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FHN8RU94TU;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = swiftui.elements.com.MealsCAAUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

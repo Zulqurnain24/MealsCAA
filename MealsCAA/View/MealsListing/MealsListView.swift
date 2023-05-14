@@ -8,7 +8,7 @@
 import Combine
 import SwiftUI
 
-struct ContentView: View {
+struct MealsListView: View {
   
   @StateObject var viewModel: SearchMealsViewModel
   
@@ -20,8 +20,8 @@ struct ContentView: View {
   }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MealsListView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(viewModel: SearchMealsViewModel(searchMealsUseCase: SearchMealsUseCase(networkService: MockNetworkService())))
+        MealsListView(viewModel: SearchMealsViewModel(searchMealsUseCase: SearchMealsUseCase(networkService: MockNetworkService())))
     }
 }
